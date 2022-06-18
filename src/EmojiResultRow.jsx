@@ -9,6 +9,7 @@ export default class EmojiResultRow extends Component {
       <div
         className="component-emoji-result-row copy-to-clipboard"
         data-clipboard-text={this.props.symbol}
+        onClick={() => alert("Emoji copied to clipboard")}
       >
         <img alt={this.props.title} src={src} />
         <span className="title">{this.props.title}</span>
